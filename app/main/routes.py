@@ -2,7 +2,6 @@ from datetime import datetime
 from flask import render_template, flash, redirect, url_for, request, g, \
     jsonify, current_app
 from app.main.forms import SearchForm
-from app.models import User, Post, Message, Notification
 from app.main import bp
 
 
