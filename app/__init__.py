@@ -1,5 +1,3 @@
-import logging
-from logging.handlers import SMTPHandler, RotatingFileHandler
 import os
 from flask import Flask, request, current_app
 from flask_bootstrap import Bootstrap
