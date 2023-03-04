@@ -4,8 +4,11 @@ from flask import render_template, flash, redirect, url_for, request, g, \
 from app.main.forms import SearchForm
 from app.main import bp
 
+@bp.route("/")
+def index():
+    return render_template('index.html')
 
-@bp.route('/')
+@bp.route('/search')
 def search():
     if not g.search_form.validate():
         return redirect(url_for('main.explore'))
