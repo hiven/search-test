@@ -6,7 +6,6 @@ from app.main import bp
 
 
 @bp.route('/')
-@login_required
 def search():
     if not g.search_form.validate():
         return redirect(url_for('main.explore'))
